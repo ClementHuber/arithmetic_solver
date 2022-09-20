@@ -13,10 +13,9 @@
 
 import numpy as np
 
-from arithmetic_solver.solvers.solver_interface import SolverInterface
-
 from .data.parameters import (DATASET, GAME_RULES, N_NUMBERS, TARGET_MAX,
                               TARGET_MIN)
+from .solvers.bruteforce_solver import BruteforceSolver
 
 # MAIN ========================================================================
 
@@ -48,7 +47,7 @@ def main():
           ", ".join(map(str, numbers.tolist())))
 
     # Solve the arithmetic problem
-    solver = SolverInterface()
+    solver = BruteforceSolver()
     solver.solve(target, numbers)
 
     print("===========================================================\n")

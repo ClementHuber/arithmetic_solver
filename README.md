@@ -18,6 +18,8 @@ Solver of the arithmetic game *"Le Compte est bon"* in the French TV game show *
       - [Notes](#notes)
     - [Example](#example)
   - [Solvers](#solvers)
+    - [Bruteforce solver](#bruteforce-solver)
+      - [Approach](#approach)
 
 ## Quick Start Guide
 
@@ -120,3 +122,20 @@ Or
     66 × 9 = 594
 
 ## Solvers
+
+### Bruteforce solver
+
+#### Approach
+
+This solver computes all possible calculations to find the ones that lead to the target result.
+
+1. Compute all permutations of the given numbers (6! = 720 permutations)
+2. Compute all arrangements with repetition of the 5 arithmetic operators - chosen among the 4 basic operators (+, -, x, ÷) - to be applied to the given numbers (4^5 = 1 024 arrangements)
+3. Init the result of the current configuration
+4. Compute the result for all possible configurations:
+   - For all permutations of the given numbers
+     - For all arrangements of operators
+       - Apply each operator of the current arrangement successively on the previous result and the next number in the current permutation
+5. Remove duplicates among the computed solutions
+
+The **computational complexity** of this algorithm is: `N! * 4^(N-1) * N ~ O(N!)`
