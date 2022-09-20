@@ -20,6 +20,7 @@ Solver of the arithmetic game *"Le Compte est bon"* in the French TV game show *
   - [Solvers](#solvers)
     - [Bruteforce solver](#bruteforce-solver)
       - [Approach](#approach)
+  - [TODO](#todo)
 
 ## Quick Start Guide
 
@@ -57,7 +58,7 @@ Solver of the arithmetic game *"Le Compte est bon"* in the French TV game show *
         make install-dev
         ```
 
-        *Note: this command creates a virtual environment located in `./venv` and, once activate, install the package `arithmetic_solver` and its dependencies.*
+        *Note: this command creates a virtual environment located in `./venv` and, once activated, install the package `arithmetic_solver` and its dependencies.*
 
 ### Usage
 
@@ -139,3 +140,8 @@ This solver computes all possible calculations to find the ones that lead to the
 5. Remove duplicates among the computed solutions
 
 The **computational complexity** of this algorithm is: `N! * 4^(N-1) * N ~ O(N!)`
+
+## TODO
+
+- UML diagram of the architecture
+- Unit tests
