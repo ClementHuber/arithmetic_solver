@@ -127,6 +127,8 @@ class SolverInterface(metaclass=ABCMeta):
                 raise ValueError(message)
                 return False
 
+        return True
+
     def remove_duplicated_solutions(self) -> None:
         """
         This function remove the eventual duplicates among solutions
