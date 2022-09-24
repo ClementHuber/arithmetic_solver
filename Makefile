@@ -14,4 +14,4 @@ activate:
 	source venv/bin/activate # Activate virtual environment
 
 test:
-	py.test arithmetic_solver/tests
+	pytest arithmetic_solver/tests -v
