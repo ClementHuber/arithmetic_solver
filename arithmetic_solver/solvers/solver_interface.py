@@ -143,7 +143,7 @@ class SolverInterface(metaclass=ABCMeta):
         print("\n--- SOLUTIONS\n")
 
         if len(self._solutions) > 0:
-            print(str(len(self._solutions) + 1) + " solutions found!")
+            print(str(len(self._solutions)) + " solutions found!")
 
             for i in range(len(self._solutions)):
                 print("\nSolution #" + str(i + 1))
