@@ -38,7 +38,7 @@ def get_dependencies():
 
 setup(
     name="arithmetic_solver",
-    version="1.0.2",
+    version="1.1.0",
     description=[
         "Solver of the arithmetic game 'Le Compte est bon' in the French TV game show 'Des Chiffres et des Lettres'"],
     long_description=read("README.md"),
