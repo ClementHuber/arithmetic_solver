@@ -63,9 +63,28 @@ class Solution:
         --------
             bool: True if self == other, else False
         """
-        return (self._numbers.all() == other._numbers.all() and
-                self._operators.all() == other._operators.all() and
-                self._result == other._result)
+        if isinstance(other, Solution):
+            return (np.array_equal(self._numbers, other._numbers) and
+                    np.array_equal(self._operators, other._operators) and
+                    self._result == other._result and
+                    self._target_result == other._target_result)
+        else:
+            return False
+
+    def __ne__(self, other: object) -> bool:
+        """
+        This function overloads the operator != to check if 2 Solution objects
+        are not equal: self != other ?
+
+        Arguments:
+        ----------
+            other (Solution): Other Solution object to compare self with
+
+        Returns:
+        --------
+            bool: True if self != other, else False
+        """
+        return not self == other
 
     def __hash__(self) -> int:
         """
