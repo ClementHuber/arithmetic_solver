@@ -1,13 +1,17 @@
-#!/usr/bin/python3
-# =============================================================================
+#!/usr/bin/env python
+###############################################################################
 #
-#   Arithmetic Solver
+#    Arithmetic Solver
 #
-#   Copyright (c) Clement HUBER
+#    Copyright (c) Clément HUBER
 #
-#   MIT License
+#    MIT License
 #
-# =============================================================================
+###############################################################################
+
+__author__ = "Clément HUBER"
+__copyright__ = "Clément HUBER"
+__license__ = "MIT"
 
 # IMPORTS =====================================================================
 
@@ -15,10 +19,9 @@ import operator
 
 import numpy as np
 import pytest
+from arithmetic_solver.data.parameters import TARGET_MAX, TARGET_MIN
 from arithmetic_solver.data.solution import Solution
-
-from ..data.parameters import TARGET_MAX, TARGET_MIN
-from ..solvers.bruteforce_solver import BruteforceSolver
+from arithmetic_solver.solvers.bruteforce_solver import BruteforceSolver
 
 # TESTS =======================================================================
 #

@@ -1,26 +1,31 @@
-#!/usr/bin/python3
-# =============================================================================
+#!/usr/bin/env python
+###############################################################################
 #
-#   Arithmetic Solver
+#    Arithmetic Solver
 #
-#   Copyright (c) Clement HUBER
+#    Copyright (c) Clément HUBER
 #
-#   MIT License
+#    MIT License
 #
-# =============================================================================
+###############################################################################
 
 # IMPORTS =====================================================================
 
+import sys
 import numpy as np
+
+from arithmetic_solver import __version__
 
 from .data.parameters import (DATASET, GAME_RULES, N_NUMBERS, TARGET_MAX,
                               TARGET_MIN)
 from .solvers.bruteforce_solver import BruteforceSolver
 
+from .utilities.parser import _logger, setup_logging
+
 # MAIN ========================================================================
 
 
-def main():
+def main(args):
     """
     This function runs the Arithmetic Solver program.
     """
@@ -54,6 +59,32 @@ def main():
     # End
 
 
+def run():
+    """
+    Calls :func:`main` passing the CLI arguments extracted from :obj:`sys.argv`
+
+    This function can be used as entry point to create console scripts with
+    setuptools.
+    """
+    main(sys.argv[1:])
+
+
 if __name__ == "__main__":
     # Execute only if run as a script
-    main()
+    run()
+
+
+# """Wrapper allowing :func:`fib` to be called with string arguments in a CLI fashion
+
+#     Instead of returning the value from :func:`fib`, it prints the result to the
+#     ``stdout`` in a nicely formatted message.
+
+#     Args:
+#       args (List[str]): command line parameters as list of strings
+#           (for example  ``["--verbose", "42"]``).
+#     """
+#     args = parse_args(args)
+#     setup_logging(args.loglevel)
+#     _logger.debug("Starting crazy calculations...")
+#     print("The {}-th Fibonacci number is {}".format(args.n, fib(args.n)))
+#     _logger.info("Script ends here")

@@ -1,22 +1,26 @@
-#!/usr/bin/python3
-# =============================================================================
+#!/usr/bin/env python
+###############################################################################
 #
-#   Arithmetic Solver
+#    Arithmetic Solver
 #
-#   Copyright (c) Clement HUBER
+#    Copyright (c) Clément HUBER
 #
-#   MIT License
+#    MIT License
 #
-# =============================================================================
+###############################################################################
+
+__author__ = "Clément HUBER"
+__copyright__ = "Clément HUBER"
+__license__ = "MIT"
 
 # IMPORTS =====================================================================
 
 import operator
-import numpy as np
-from arithmetic_solver.data.solution import Solution
 
-from ..data.parameters import TARGET_MAX, TARGET_MIN
-from ..solvers.bruteforce_solver import BruteforceSolver
+import numpy as np
+from arithmetic_solver.data.parameters import TARGET_MAX, TARGET_MIN
+from arithmetic_solver.data.solution import Solution
+from arithmetic_solver.solvers.bruteforce_solver import BruteforceSolver
 
 # TESTS =======================================================================
 
@@ -70,3 +74,11 @@ def test_solve():
         273)
 
     assert solver._closest_solution == closest_solution
+
+# def test_main(capsys):
+#     """CLI Tests"""
+#     # capsys is a pytest fixture that allows asserts against stdout/stderr
+#     # https://docs.pytest.org/en/stable/capture.html
+#     main(["7"])
+#     captured = capsys.readouterr()
+#     assert "The 7-th Fibonacci number is 13" in captured.out

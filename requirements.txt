@@ -1,3 +1,0 @@
-numpy==1.21.5
-pytest==7.1.2
-setuptools==59.6.0

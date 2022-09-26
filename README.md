@@ -1,3 +1,17 @@
+<!-- These are examples of badges you might want to add to your README:
+     please update the URLs accordingly
+
+[![Built Status](https://api.cirrus-ci.com/github/ClementHuber/arithmetic_solver.svg?branch=main)](https://cirrus-ci.com/github/ClementHuber/arithmetic_solver)
+[![ReadTheDocs](https://readthedocs.org/projects/arithmetic_solver/badge/?version=latest)](https://arithmetic_solver.readthedocs.io/en/stable/)
+[![Coveralls](https://img.shields.io/coveralls/github/ClementHuber/arithmetic_solver/main.svg)](https://coveralls.io/r/ClementHuber/arithmetic_solver)
+[![PyPI-Server](https://img.shields.io/pypi/v/arithmetic_solver.svg)](https://pypi.org/project/arithmetic_solver/)
+[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/arithmetic_solver.svg)](https://anaconda.org/conda-forge/arithmetic_solver)
+[![Monthly Downloads](https://pepy.tech/badge/arithmetic_solver/month)](https://pepy.tech/project/arithmetic_solver)
+[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter)](https://twitter.com/arithmetic_solver)
+-->
+
+[![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](https://pyscaffold.org/)
+
 # Arithmetic Solver
 
 ## Brief

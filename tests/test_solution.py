@@ -1,21 +1,24 @@
-#!/usr/bin/python3
-# =============================================================================
+#!/usr/bin/env python
+###############################################################################
 #
-#   Arithmetic Solver
+#    Arithmetic Solver
 #
-#   Copyright (c) Clement HUBER
+#    Copyright (c) Clément HUBER
 #
-#   MIT License
+#    MIT License
 #
-# =============================================================================
+###############################################################################
+
+__author__ = "Clément HUBER"
+__copyright__ = "Clément HUBER"
+__license__ = "MIT"
 
 # IMPORTS =====================================================================
 
 import operator
 
 import numpy as np
-
-from ..data.solution import Solution
+from arithmetic_solver.data.solution import Solution
 
 # TESTS =======================================================================
 
