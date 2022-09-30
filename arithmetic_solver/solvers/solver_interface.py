@@ -94,7 +94,7 @@ class SolverInterface(metaclass=ABCMeta):
 
             message = ["The target value (= ", str(target_value),
                        ") must be within [", str(TARGET_MIN), ", ",
-                       str(TARGET_MAX)]
+                       str(TARGET_MAX), "]"]
             message = "".join(message)
 
             raise ValueError(message)
